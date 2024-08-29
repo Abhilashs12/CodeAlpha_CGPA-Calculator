@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1724929717 source:d:\college\bmsce\intenship\codeaplha\cpga\main.cpp
+	<iostream>
+	<vector>
+	<iomanip>
+
