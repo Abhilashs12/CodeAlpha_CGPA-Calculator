@@ -6,7 +6,7 @@ using namespace std;
 
 struct Course {
     string name;
-    double gradePoints; // GPA equivalent of the grade
+    double gradePoints; 
     int credits;
 };
 
@@ -19,7 +19,7 @@ double calculateGPA(const vector<Course>& courses) {
         totalCredits += course.credits;
     }
 
-    if (totalCredits == 0) return 0; // Avoid division by zero
+    if (totalCredits == 0) return 0; 
     return totalGradePoints / totalCredits;
 }
 
@@ -32,7 +32,7 @@ int main() {
 
     for (int i = 0; i < numCourses; ++i) {
         cout << "Enter the name of course " << i + 1 << ": ";
-        cin.ignore(); // to clear the newline character from the input buffer
+        cin.ignore(); 
         getline(cin, courses[i].name);
 
         cout << "Enter the grade points for " << courses[i].name << " (e.g., 4.0 for A): ";
@@ -43,7 +43,7 @@ int main() {
     }
 
     double gpa = calculateGPA(courses);
-    cout << fixed << setprecision(2); // To format GPA to 2 decimal places
+    cout << fixed << setprecision(2); 
     cout << "Your CGPA is: " << gpa << endl;
 
     return 0;
